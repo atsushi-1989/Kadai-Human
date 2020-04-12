@@ -3,9 +3,11 @@ package jp.techacademy.atsushi.kadai_human
 import android.util.Log
 
 open class Human : Animal, Thinkable {
-    val hobby :String = "アプリ製作"
 
-    constructor(name: String, age:Int): super(name,age){
+    var hobby :String
+
+    constructor(name: String, age:Int, hobby: String): super(name,age){
+        this.hobby = hobby
     }
 
     //Animalクラスのメソッドをオーバーライド
